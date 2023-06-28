@@ -14,11 +14,11 @@ edad_dist = (20, 5)
 edad_dist, ax2 = plt.subplots(figsize=edad_dist)
 ax2 = sns.countplot(x=df['Age'])
 plt.show()
-
 ## La edad en el dataset va de 28 a 77, siendo el grupo de 50 a 60 el rango etáreo que más cantidad de personas contiene.
 
 # DISTRIBUCION DEL COLESTEROL: 
 sns.displot(x=df['Cholesterol'], bins=30)
+sns.show()
 ## Se ve que hay muchisimos registros con valor igual a 0 para ésta variable. Habria que analizar si hay pacientes con colesterol igual a 0, o si es un error del dataset
 
 # CANTIDAD DE PERSONAS QUE PRESENTAN COLESTEROL 0
