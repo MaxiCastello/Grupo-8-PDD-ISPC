@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns 
 
 #Carga del Dataset;
-df = pd.read_csv("C:\\Users\jose4\\Desktop\Max\\heart.csv")
+df = pd.read_csv("./dataset/heart.csv")
 df.head()
 
 # METRICAS BÁSICAS
