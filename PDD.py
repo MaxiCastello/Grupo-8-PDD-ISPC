@@ -4,7 +4,15 @@ import seaborn as sns
 
 #Carga del Dataset;
 df = pd.read_csv("./dataset/heart.csv")
-df.head()
+
+# Verificación de los datos cargados
+print(df.head())
+
+# Verificación de los tipos de datos de las columnas
+print(df.dtypes)
+
+# Verificación de datos faltantes en cada columna
+print(df.isnull().sum())
 
 # METRICAS BÁSICAS
 df.describe()
