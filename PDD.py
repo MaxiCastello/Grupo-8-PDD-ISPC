@@ -32,3 +32,12 @@ sns.show()
 # CANTIDAD DE PERSONAS QUE PRESENTAN COLESTEROL 0
 colesterol_0 = df[df['Cholesterol']==0]
 print(" La cantidad de pacientes que presentan niveles de colesterol 0 son: ",colesterol_0.Cholesterol.count())
+
+
+# PROPORCIÓN DEL GENERO
+gender_counts = df['sex'].value_counts()
+plt.pie(gender_counts, labels=['Hombres', 'Mujeres'], autopct='%1.1f%%')
+plt.title('Proporción de género')
+plt.show()
+# print(gender_counts)
+## De los pacientes a quienes se les realizó el estudio, el 31.7%, es decir 96 pacientes eran mujeres y el 68.3%, corrspondiente a 207 pacientes eran hombres.
